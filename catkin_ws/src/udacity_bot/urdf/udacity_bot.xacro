@@ -4,6 +4,10 @@
 
   <xacro:include filename="$(find udacity_bot)/urdf/udacity_bot.gazebo" />
 
+  <material name="red">
+    <color rgba="0.8 0 0 1"/>
+  </material>
+
   <link name="robot_footprint"></link>
 
   <joint name="robot_footprint_joint" type="fixed">
@@ -37,6 +41,7 @@
       <geometry>
         <box size=".4 .2 .1"/>
       </geometry>
+      <material name="red"/>
     </visual>
 
 
@@ -62,6 +67,7 @@
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
+      <material name="red"/>
     </visual>
 
     <collision name='front_caster_collision'>
@@ -86,6 +92,7 @@
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
+      <material name="red"/>
     </visual>
 
   </link>
@@ -96,6 +103,7 @@
       <geometry>
         <cylinder radius="0.1" length="0.05"/>
       </geometry>
+      <material name="red"/>
     </visual>
 
     <collision name="left_wheel_collision">
@@ -126,14 +134,15 @@
   </joint>
 
   <link name="right_wheel">
-    <visual name="right_wheel_visual">
+    <visual name="visual">
       <origin xyz="0 0 0" rpy="0 1.5707 1.5707"/>
       <geometry>
         <cylinder radius="0.1" length="0.05"/>
       </geometry>
+      <material name="red"/>
     </visual>
 
-    <collision name="right_wheel_collision">
+    <collision name="collision">
       <origin xyz="0 0 0" rpy="0 1.5707 1.5707"/>
       <geometry>
         <cylinder radius="0.1" length="0.05"/>
@@ -161,14 +170,15 @@
   </joint>
 
   <link name="camera">
-    <visual name="right_wheel_visual">
+    <visual name="visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <box size=".05 .05 .05"/>
       </geometry>
+      <material name="red"/>
     </visual>
 
-    <collision name="right_wheel_collision">
+    <collision name="collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <box size=".05 .05 .05"/>
@@ -193,14 +203,14 @@
   </joint>
 
   <link name="hokuyo">
-    <visual name="hokuyo_visual">
+    <visual name="visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://udacity_bot/meshes/hokuyo.dae"/>
       </geometry>
     </visual>
 
-    <collision name="hokuyo_collision">
+    <collision name="collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <box size=".1 .1 .1"/>
