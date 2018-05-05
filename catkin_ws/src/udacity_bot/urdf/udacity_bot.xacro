@@ -228,7 +228,7 @@
     </inertial>
   </link>
 
-  <joint type="continuous" name="hokuyo_joint">
+  <joint type="fixed" name="hokuyo_joint">
     <origin xyz=".15 0 .1" rpy="0 0 0"/>
     <child link="hokuyo"/>
     <parent link="chassis"/>
