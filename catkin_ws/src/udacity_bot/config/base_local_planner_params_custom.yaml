@@ -1,0 +1,15 @@
+TrajectoryPlannerROS:
+
+  # Robot Configuration Parameters
+  holonomic_robot: false
+
+  # Goal Tolerance Parameters
+  yaw_goal_tolerance: 0.4
+  xy_goal_tolerance: 0.2
+
+  # Forward Simulation Parameters
+  sim_time: 5.0
+
+  # Trajectory Scoring Parameters
+  meter_scoring: true
+  pdist_scale: 0.7

@@ -5,7 +5,7 @@ obstacle_range: 3.0
 raytrace_range: 4.0
 transform_tolerance: 0.5
 robot_radius: 0.5
-inflation_radius: 0.20
+inflation_radius: 0.30
 
 observation_sources: laser_scan_sensor
 
