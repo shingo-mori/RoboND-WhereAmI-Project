@@ -24,7 +24,7 @@ A ROS package is created and mobile robots performing 2D navigation in a gazebo 
 \end{abstract}
 
 \begin{IEEEkeywords}
-Udacity, ROS, Localization, Navigation Stack, AMCL.
+Udacity, ROS, SLAM, Navigation Stack, AMCL.
 \end{IEEEkeywords}}
 
 \maketitle
@@ -252,13 +252,13 @@ Both the benchmark model and the personal model reaches the goal with sufficient
 
 \begin{figure}[thpb]
       \centering
-      \subfloat[Benchmark Model]{\includegraphics[width=0.45\linewidth]{result-drift-away}\label{fig:result-drift-away}}
+      \subfloat[Initially drifting away from its global path-plan.]{\includegraphics[width=0.45\linewidth]{result-drift-away}\label{fig:result-drift-away}}
       \hfill
-      \subfloat[Personal Model]{\includegraphics[width=0.45\linewidth]{result-following-path}\label{fig:result-following-path}}
+      \subfloat[Returning to and start following the global path-plan.]{\includegraphics[width=0.45\linewidth]{result-following-path}\label{fig:result-following-path}}
       \vfill
-      \subfloat[Benchmark Model]{\includegraphics[width=0.45\linewidth]{result-corner}\label{fig:result-corner}}
+      \subfloat[Passing the corner without being stuck.]{\includegraphics[width=0.45\linewidth]{result-corner}\label{fig:result-corner}}
       \hfill
-      \subfloat[Personal Model]{\includegraphics[width=0.45\linewidth]{result-goal}\label{fig:result-goal}}
+      \subfloat[Reaching the goal pose.]{\includegraphics[width=0.45\linewidth]{result-goal}\label{fig:result-goal}}
       \caption{Resulting movements.}
 \end{figure}
 
