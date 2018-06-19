@@ -1,3 +1,5 @@
+[![Udacity - Robotics NanoDegree Program](https://s3-us-west-1.amazonaws.com/udacity-robotics/Extra+Images/RoboND_flag.png)](https://www.udacity.com/robotics)
+
 # RoboND-WhereAmI-Project
 
 The second project of the Udacity Robotics Software Nanodegree Program Term 2.
